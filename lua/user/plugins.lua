@@ -41,6 +41,7 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim")
 	use("nvim-lua/plenary.nvim")
 	use("kyazdani42/nvim-web-devicons")
+	use("antoinemadec/FixCursorHold.nvim")
 
 	-- Themes
 	use("shaunsingh/nord.nvim")
@@ -69,9 +70,9 @@ return packer.startup(function(use)
 	use("ray-x/lsp_signature.nvim")
 	-- use("github/copilot.vim") -- ENABLE ON FIRST TIME ONLY!
 	use("zbirenbaum/copilot.lua")
-
-	-- Trouble
 	use("folke/trouble.nvim")
+	use("onsails/lspkind.nvim")
+	use("glepnir/lspsaga.nvim")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
@@ -125,9 +126,6 @@ return packer.startup(function(use)
 
 	-- Colorizer
 	use("norcalli/nvim-colorizer.lua")
-
-	-- Navic
-	use("SmiteshP/nvim-navic")
 
 	-- Wakatime
 	use("wakatime/vim-wakatime")
