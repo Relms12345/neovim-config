@@ -152,6 +152,9 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- UI
+	use("stevearc/dressing.nvim")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

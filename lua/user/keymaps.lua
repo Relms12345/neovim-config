@@ -36,11 +36,8 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Telescope
-keymap("n", "<leader>ff", ":Telescope frecency<CR>", opts)
 keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
-keymap("n", "<leader>fe", ":Telescope emoji<CR>", opts)
-keymap("n", "<leader>fp", ":Telescope project<CR>", opts)
 keymap("n", "<leader>fd", ":Telescope dap commands<CR>", opts)
 
 -- Comment
