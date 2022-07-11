@@ -18,3 +18,7 @@ lspconfig.util.default_config = vim.tbl_extend("force", lspconfig.util.default_c
 require("user.lsp.settings.sumneko_lua")
 require("user.lsp.settings.jsonls")
 require("user.lsp.settings.tsserver")
+require("user.lsp.settings.yamlls")
+require("user.lsp.settings.volar")
+require("user.lsp.settings.dockerls")
+require("user.lsp.settings.rnix")
