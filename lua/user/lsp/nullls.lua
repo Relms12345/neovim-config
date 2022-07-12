@@ -13,6 +13,7 @@ null_ls.setup({
 		formatting.stylua,
 		code_actions.eslint_d,
 		diagnostics.eslint_d,
+		diagnostics.cspell,
 		formatting.eslint_d,
 	},
 	on_attach = function(client)
