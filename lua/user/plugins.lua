@@ -73,6 +73,7 @@ return packer.startup(function(use)
 	use("folke/trouble.nvim")
 	use("onsails/lspkind.nvim")
 	use("glepnir/lspsaga.nvim")
+	use("Maan2003/lsp_lines.nvim")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
@@ -154,6 +155,9 @@ return packer.startup(function(use)
 
 	-- UI
 	use("stevearc/dressing.nvim")
+
+	-- Undo Tree
+	use("mbbill/undotree")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

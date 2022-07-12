@@ -92,6 +92,9 @@ keymap("n", "<leader>sw", ":lua require('spectre').open_visual({select_word=true
 keymap("n", "<leader>s", ":lua require('spectre').open_visual()<CR>", opts)
 keymap("n", "<leader>sp", ":lua require('spectre').open_file_search()<CR>", opts)
 
+-- UndoTree
+keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
+
 -- Insert --
 
 -- Visual --
