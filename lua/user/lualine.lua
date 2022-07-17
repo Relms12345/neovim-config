@@ -34,5 +34,6 @@ lualine.setup({
 		"toggleterm",
 		"fzf",
 		"quickfix",
+		"nvim-dap-ui",
 	},
 })

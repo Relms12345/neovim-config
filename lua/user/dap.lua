@@ -3,10 +3,10 @@ if not dapui_status_ok then
 	return
 end
 
-local vtest_status_ok, vtest = pcall(require, "nvim-dap-virtual-text")
-if not vtest_status_ok then
+local vtext_status_ok, vtext = pcall(require, "nvim-dap-virtual-text")
+if not vtext_status_ok then
 	return
 end
 
 dapui.setup()
-vtest.setup()
+vtext.setup()

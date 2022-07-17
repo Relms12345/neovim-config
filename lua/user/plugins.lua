@@ -74,6 +74,7 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim")
 	use("glepnir/lspsaga.nvim")
 	use("Maan2003/lsp_lines.nvim")
+	use("SmiteshP/nvim-navic")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
@@ -84,6 +85,7 @@ return packer.startup(function(use)
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("p00f/nvim-ts-rainbow")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
+	use("SmiteshP/nvim-gps")
 
 	-- Autopairs
 	use("windwp/nvim-autopairs")
@@ -155,6 +157,7 @@ return packer.startup(function(use)
 
 	-- UI
 	use("stevearc/dressing.nvim")
+	use("ghillb/cybu.nvim")
 
 	-- Undo Tree
 	use("mbbill/undotree")

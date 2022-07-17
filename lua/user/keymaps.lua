@@ -70,7 +70,7 @@ keymap("n", "<leader>duh", ":lua require('dap.ui.widgets').hover()<CR>", opts)
 keymap(
 	"n",
 	"<leader>duf",
-	":lua local widgets=require('dap.ui.widgets');widgets.centered_float(widgets.scopes)<CR>",
+	":lua local widgets=require('dap.ui.widgets').widgets.centered_float(widgets.scopes)<CR>",
 	opts
 )
 keymap("n", "<leader>dro", ":lua require('dap').repl.open()<CR>", opts)
