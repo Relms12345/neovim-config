@@ -125,10 +125,16 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 
 	-- Alpha
-	use("goolord/alpha-nvim")
+	use({
+		"goolord/alpha-nvim",
+		config = function()
+			require("user.alpha")
+		end,
+	})
 
-	-- WhichKey
+	-- Keymaps
 	use("folke/which-key.nvim")
+	use("mrjones2014/legendary.nvim")
 
 	-- Illuminate
 	use("RRethy/vim-illuminate")

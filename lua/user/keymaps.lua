@@ -95,6 +95,9 @@ keymap("n", "<leader>sp", ":lua require('spectre').open_file_search()<CR>", opts
 -- UndoTree
 keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
 
+-- Legendary
+keymap("n", "<C-p>", ":lua require('legendary').find()<CR>", opts)
+
 -- Insert --
 
 -- Visual --

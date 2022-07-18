@@ -23,14 +23,34 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	return "I use Arch BTW"
+	-- Number of plugins
+	local total_plugins = #vim.tbl_keys(packer_plugins)
+	local datetime = os.date("%d-%m-%Y %H:%M:%S")
+	local plugins_text = "   "
+		.. total_plugins
+		.. " plugins"
+		.. "   v"
+		.. vim.version().major
+		.. "."
+		.. vim.version().minor
+		.. "."
+		.. vim.version().patch
+		.. "   "
+		.. datetime
+
+	-- Quote
+	local fortune = require("alpha.fortune")
+	local quote = table.concat(fortune(), "\n")
+
+	return "\n" .. plugins_text .. "\n" .. quote .. "\n" .. " I use Arch BTW"
 end
 
 dashboard.section.footer.val = footer()
 
-dashboard.section.footer.opts.hl = "Type"
+dashboard.section.footer.opts.hl = "Constant"
 dashboard.section.header.opts.hl = "Include"
-dashboard.section.buttons.opts.hl = "Keyword"
-
+dashboard.section.buttons.opts.hl = "Function"
+dashboard.section.buttons.opts.hl_shortcut = "Type"
 dashboard.opts.opts.noautocmd = true
+
 alpha.setup(dashboard.opts)
