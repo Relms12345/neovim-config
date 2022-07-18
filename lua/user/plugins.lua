@@ -32,6 +32,10 @@ packer.init({
 			return require("packer.util").float({ border = "rounded" })
 		end,
 	},
+	profile = {
+		enable = true,
+		threshold = 0,
+	},
 })
 
 return packer.startup(function(use)
@@ -112,8 +116,10 @@ return packer.startup(function(use)
 	-- Toggleterm
 	use("akinsho/toggleterm.nvim")
 
-	-- Impatient
+	-- Speed
 	use("lewis6991/impatient.nvim")
+	use("nathom/filetype.nvim")
+	use("dstein64/vim-startuptime")
 
 	-- Indent Line
 	use("lukas-reineke/indent-blankline.nvim")
