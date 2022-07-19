@@ -59,14 +59,8 @@ local function get_fileicon()
 	file_path = file_path:gsub("^%/", "")
 
 	if not is_empty(filename) then
-		local default = false
-
-		if is_empty(file_type) then
-			file_type = ""
-			default = true
-		end
 		file_icon, file_icon_color =
-			require("nvim-web-devicons").get_icon_color(filename, file_type, { default = default })
+			require("nvim-web-devicons").get_icon_color(filename, file_type, { default = true })
 		vim.api.nvim_set_hl(0, hl_winbar_file_icon, { fg = file_icon_color })
 	end
 
