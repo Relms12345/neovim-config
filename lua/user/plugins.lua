@@ -46,6 +46,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 	use("kyazdani42/nvim-web-devicons")
 	use("antoinemadec/FixCursorHold.nvim")
+	use("kevinhwang91/promise-async")
 
 	-- Themes
 	use("shaunsingh/nord.nvim")
@@ -79,6 +80,7 @@ return packer.startup(function(use)
 	use("glepnir/lspsaga.nvim")
 	use("Maan2003/lsp_lines.nvim")
 	use("SmiteshP/nvim-navic")
+	use("kevinhwang91/nvim-ufo")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")

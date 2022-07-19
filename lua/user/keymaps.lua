@@ -98,6 +98,10 @@ keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
 -- Legendary
 keymap("n", "<C-p>", ":lua require('legendary').find()<CR>", opts)
 
+-- UFO
+keymap("n", "zR", ":lua require('ufo').openAllFolds", opts)
+keymap("n", "zM", ":lua require('ufo').closeAllFolds", opts)
+
 -- Insert --
 
 -- Visual --

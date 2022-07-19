@@ -80,8 +80,13 @@ M.on_attach = function(client, bufnr)
 	attach_navic(client, bufnr)
 end
 
+-- Define Capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.foldingRange = {
+	dynamicRegistration = false,
+	lineFoldingOnly = true
+}
 
 local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 
