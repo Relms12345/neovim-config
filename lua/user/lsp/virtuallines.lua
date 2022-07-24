@@ -3,7 +3,7 @@ if not status_ok then
 	return
 end
 
-lines.register_lsp_virtual_lines()
+lines.setup()
 
 vim.diagnostic.config({
 	virtual_text = false,

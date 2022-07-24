@@ -115,7 +115,14 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 
 	-- Nvim-Tree
-	use("kyazdani42/nvim-tree.lua")
+	use({
+		"kyazdani42/nvim-tree.lua",
+		opt = true,
+		cmd = { "NvimTreeToggle", "NvimTreeClose" },
+		config = function()
+			require("user.nvimtree")
+		end,
+	})
 
 	-- Bufferline
 	use("akinsho/bufferline.nvim")
