@@ -48,19 +48,9 @@ return packer.startup(function(use)
 	use("antoinemadec/FixCursorHold.nvim")
 	use("kevinhwang91/promise-async")
 
-	-- Theme
-	use({
-		"rmehri01/onenord.nvim",
-		config = function()
-			require("onenord").setup()
-		end,
-	})
-	use({
-		"folke/lsp-colors.nvim",
-		config = function()
-			require("lsp-colors").setup()
-		end,
-	})
+	-- Themes
+	use("shaunsingh/nord.nvim")
+	use("folke/lsp-colors.nvim")
 
 	-- Completion
 	use("hrsh7th/nvim-cmp")
