@@ -89,7 +89,7 @@ return packer.startup(function(use)
 	use("folke/trouble.nvim")
 	use("onsails/lspkind.nvim")
 	use("glepnir/lspsaga.nvim")
-	use("Maan2003/lsp_lines.nvim")
+	use("https://git.sr.ht/~whynothugo/lsp_lines.nvim")
 	use("SmiteshP/nvim-navic")
 	use("kevinhwang91/nvim-ufo")
 
