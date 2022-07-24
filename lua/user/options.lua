@@ -36,7 +36,6 @@ vim.opt.incsearch = true
 vim.opt.colorcolumn = "120"
 vim.opt.list = true
 vim.opt.listchars:append("lead:.")
-vim.opt.winbar = "%{%v:lua.require'user.winbar'.get_winbar()%}"
 vim.opt.foldcolumn = "2"
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = -1

@@ -21,7 +21,7 @@ bufferline.setup({
 		tab_size = 21,
 		diagnostics = "nvim_lsp",
 		diagnostics_update_in_insert = true,
-		offsets = { { filetype = "NvimTree", text = "" } },
+		offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
 		show_buffer_icons = true,
 		show_buffer_close_icons = true,
 		show_close_icon = true,
