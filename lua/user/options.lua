@@ -45,3 +45,7 @@ vim.opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]])
+
+vim.cmd(
+	"let g:clipboard = { 'copy': { '+': 'xsel', '*': 'xsel' }, 'paste': { '+': 'xsel', '*': 'xsel' }, 'cache_enabled': 0 }"
+)
