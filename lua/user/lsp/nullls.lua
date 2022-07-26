@@ -17,6 +17,7 @@ null_ls.setup({
 		diagnostics.markdownlint,
 		formatting.markdownlint,
 		diagnostics.yamllint,
+		formatting.rustfmt,
 	},
 	on_attach = function(client)
 		if client.server_capabilities.documentFormattingProvider then

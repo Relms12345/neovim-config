@@ -91,6 +91,24 @@ return packer.startup(function(use)
 	use("SmiteshP/nvim-navic")
 	use("kevinhwang91/nvim-ufo")
 
+	-- Rust Dev
+	use({
+		"simrat39/rust-tools.nvim",
+		config = function()
+			require("rust-tools").setup({})
+		end,
+	})
+	use({
+		"saecki/crates.nvim",
+		config = function()
+			require("crates").setup({
+				null_ls = {
+					enabled = true,
+				},
+			})
+		end,
+	})
+
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })

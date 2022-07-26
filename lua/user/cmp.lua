@@ -82,8 +82,8 @@ cmp.setup({
 			before = function(entry, vim_item)
 				vim_item.menu = ({
 					nvim_lsp = "[LSP]",
-					copilot = "[COPILOT]",
 					npm = "[NPM]",
+					crates = "[CRATES]",
 					nvim_lua = "[NVIM_LUA]",
 					luasnip = "[SNIPPET]",
 					buffer = "[BUFFER]",
@@ -94,9 +94,9 @@ cmp.setup({
 		}),
 	},
 	sources = {
-		{ name = "copilot" },
 		{ name = "nvim_lsp" },
 		{ name = "npm" },
+		{ name = "crates" },
 		{ name = "nvim_lua" },
 		{ name = "luasnip" },
 		{ name = "buffer" },
