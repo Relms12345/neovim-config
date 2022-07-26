@@ -72,7 +72,6 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-nvim-lua")
 	use("David-Kunz/cmp-npm")
-	use("zbirenbaum/copilot-cmp")
 
 	-- Snippets
 	use("L3MON4D3/LuaSnip")
@@ -85,8 +84,6 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("b0o/SchemaStore.nvim")
 	use("ray-x/lsp_signature.nvim")
-	-- use("github/copilot.vim") -- ENABLE ON FIRST TIME ONLY!
-	use("zbirenbaum/copilot.lua")
 	use("folke/trouble.nvim")
 	use("onsails/lspkind.nvim")
 	use("glepnir/lspsaga.nvim")
