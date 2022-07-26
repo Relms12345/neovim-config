@@ -14,6 +14,9 @@ null_ls.setup({
 		code_actions.eslint_d,
 		diagnostics.eslint_d,
 		formatting.eslint_d,
+		diagnostics.markdownlint,
+		formatting.markdownlint,
+		diagnostics.yamllint,
 	},
 	on_attach = function(client)
 		if client.server_capabilities.documentFormattingProvider then
